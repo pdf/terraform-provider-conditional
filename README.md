@@ -7,8 +7,8 @@ Terraform currently lacks the ability to act on a ternary condition with anythin
 
 ## Build the Provider
 ```bash
-mkdir "${GOPATH}/src/github.com/pdf"
-cd "${GOPATH}/src/github.com/pdf"
+mkdir -p "${GOPATH:-${HOME}/go}/src/github.com/pdf"
+cd "${GOPATH:-${HOME}/go}/src/github.com/pdf"
 git clone https://github.com/pdf/terraform-provider-conditional.git && cd $_
 dep ensure
 go install
@@ -45,7 +45,7 @@ The currently available conditional resources are:
 | Resource name | Description | Example `then`/`else`/`result` values |
 |---------------|-------------|----------------|
 | **`conditional_list_of_string`** | A list of strings | `["list", "of", "string"]` |
-| **`conditional_list_of_list_of_string`** | A list of lists of strings | `[["a" "list"], ["another", "list"]]` |
+| **`conditional_list_of_list_of_string`** | A list of lists of strings | `[["a", "list"], ["another", "list"]]` |
 | **`conditional_list_of_map`** | A list of maps | `[{a = "map"}, {another = "map"}]` |
 | **`conditional_map`** | A map | `{a = "map"}` |
 
