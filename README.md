@@ -17,7 +17,7 @@ go install
 ## Using the Provider
 If you're building the provider, follow the instructions to [install it as a plugin](https://www.terraform.io/docs/plugins/basics.html#installing-a-plugin). After placing it in your plugins directory, run `terraform init` to initialize it.
 
-See the [examples](https://github.com/pdf/terraform-provider-conditional/tree/master/examples) directory for example declarations, below is a typical use-case:
+See the [example](https://github.com/pdf/terraform-provider-conditional/tree/master/example) directory for example declarations, below is a typical use-case:
 
 ```hcl
 /*
