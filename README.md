@@ -9,7 +9,7 @@ Terraform currently lacks the ability to act on a ternary condition with anythin
 ```bash
 mkdir -p "${GOPATH:-${HOME}/go}/src/github.com/pdf"
 cd "${GOPATH:-${HOME}/go}/src/github.com/pdf"
-git clone https://github.com/pdf/terraform-provider-conditional.git && cd $_
+git clone https://github.com/pdf/terraform-provider-conditional.git && cd terraform-provider-conditional
 dep ensure
 go install
 ```
