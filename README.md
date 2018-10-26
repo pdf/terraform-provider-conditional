@@ -1,3 +1,5 @@
+## _DEPRECATED: As of Terraform v0.12.0-alpha1 you should be able to use conditionals with list types._
+
 # Terraform Provider Conditional
 Terraform currently lacks the ability to act on a ternary condition with anything but string values. This provider aims to be a stop-gap, providing conditionals for more complex types, until Terraform either gains broader conditional support, or support for custom functions (with HCL2).
 
